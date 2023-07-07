@@ -222,7 +222,7 @@ body {
 	.boorger a.active span:nth-child(2) {
 		transform-origin: left bottom;
 		transform: rotate(-45deg);
-		margin-top: 12px;
+		margin-top: 14px;
 	}
 	.header__list.active {
 		top: 0;

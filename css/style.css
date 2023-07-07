@@ -164,13 +164,14 @@ body {
 		font-size: 14px;
 	}
 	.header__info {
-		width: 73px;
-		padding: 2px 8px;
+		width: 57px;
+		padding: 3px 8px;
 		border: 1px solid #686868;
 		border-radius: 30px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		font-size: 11px;
 	}
 	.header__info-text {
 		color: #686868;
@@ -182,17 +183,78 @@ body {
 		max-width: 10px;
 	}
 	.boorger {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		float: right;
 		margin-left: 12px;
 		height: 10px;
+		padding-bottom: 10px;
+	}
+	.boorger a {
+		display: inline-block;
+		position: relative;
+		z-index: 100;
 		width: 20px;
 	}
-	.boorger span {
+	.boorger a span {
+		display: block;
+		transition: all 0.4s;
 		width: 100%;
 		height: 1px;
+		margin-top: 5px;
 		background-color: #fff;
+	}
+	.header__list {
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.9);
+		width: 100%;
+		height: 100vh;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: -200vh;
+		transition: all 0.5s;
+	}
+	.boorger a.active span:nth-child(1) {
+		transform-origin: left top;
+		transform: rotate(45deg);
+		margin-top: 3px;
+	}
+	.boorger a.active span:nth-child(2) {
+		transform-origin: left bottom;
+		transform: rotate(-45deg);
+		margin-top: 12px;
+	}
+	.header__list.active {
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		z-index: 5;
+	}
+	.header__list-item {
+		display: block;
+		position: relative;
+		font-size: 22px;
+		color: #fff;
+		margin-bottom: 20px;
+		overflow: hidden;
+		transition: all 0.4s;
+		padding-bottom: 5px;
+	}
+	.header__list-item::before {
+		content: '';
+		display: inline-block;
+		height: 2px;
+		background-color: #fff;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		left: -100%;
+		transition: all 0.4s;
+	}
+	.header__list-item:hover::before {
+		left: 0;
 	}
 	.form {
 		margin-bottom: 30px;
@@ -259,6 +321,7 @@ body {
 		border-radius: 26px 26px 37px 37px;
 		background: linear-gradient(180deg, #1b1a1a 0%, rgba(45, 45, 45, 0) 36.46%);
 		padding-top: 16px;
+		margin: 0 12px;
 	}
 	.general:nth-child(1) {
 		margin-top: 132px;
@@ -284,6 +347,7 @@ body {
 	}
 	.general__box-content {
 		color: #959595;
+		width: 80px;
 		height: 35px;
 		border-radius: 10px;
 		font-size: 13px;
@@ -309,6 +373,7 @@ body {
 	.general__l2r {
 		grid-area: 3 / 1 / 4 / 2;
 		height: 26px;
+		width: 101px;
 	}
 	.general__reg {
 		grid-area: 1 / 2 / 2 / 3;
@@ -367,7 +432,7 @@ body {
 		width: 100%;
 		border-radius: 11px;
 		background: #0047ff;
-		height: 53px;
+		height: 43px;
 		padding: 5px 7px;
 		font-size: 12px;
 		margin-bottom: 23px;
@@ -376,27 +441,10 @@ body {
 	.general__income span {
 		position: absolute;
 		font-size: 25px;
-		top: 30px;
+		top: 25px;
 		right: 10px;
 	}
-	.footer {
-		position: fixed;
-		bottom: 0;
-		height: 52px;
-		background: linear-gradient(360deg, #000 80%, rgba(0, 0, 0, 0) 100%);
-
-		width: 100%;
-	}
-	.footer__list {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 14px 23px;
-	}
-	.footer__list-item {
-		color: #fff;
-		margin: 0 12px;
-		font-size: 13px;
-		font-weight: 600;
+	.main {
+		margin-bottom: 40px;
 	}
 }

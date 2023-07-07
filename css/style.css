@@ -132,6 +132,9 @@ body {
 }
 /*    */
 @media (min-width: 375px) {
+	/* main page */
+	/* main page */
+	/* main page */
 	.container {
 		margin: 0 auto;
 		padding: 0 26px;
@@ -185,14 +188,13 @@ body {
 	.boorger {
 		float: right;
 		margin-left: 12px;
-		height: 10px;
-		padding-bottom: 10px;
 	}
 	.boorger a {
 		display: inline-block;
 		position: relative;
 		z-index: 100;
 		width: 20px;
+		height: 20px;
 	}
 	.boorger a span {
 		display: block;
@@ -222,7 +224,7 @@ body {
 	.boorger a.active span:nth-child(2) {
 		transform-origin: left bottom;
 		transform: rotate(-45deg);
-		margin-top: 14px;
+		margin: 13px 0;
 	}
 	.header__list.active {
 		top: 0;
@@ -322,9 +324,7 @@ body {
 		background: linear-gradient(180deg, #1b1a1a 0%, rgba(45, 45, 45, 0) 36.46%);
 		padding-top: 16px;
 		margin: 0 12px;
-	}
-	.general:nth-child(1) {
-		margin-top: 132px;
+		max-width: 365px;
 	}
 	.general__inner {
 		display: flex;
@@ -437,6 +437,7 @@ body {
 		font-size: 12px;
 		margin-bottom: 23px;
 		position: relative;
+		max-width: 300px;
 	}
 	.general__income span {
 		position: absolute;
@@ -444,7 +445,34 @@ body {
 		top: 25px;
 		right: 10px;
 	}
-	.main {
+	main {
 		margin-bottom: 40px;
+		margin-top: 132px;
+	}
+	/* Bots page */
+	/* Bots page */
+	/* Bots page */
+	/* Bots page */
+	/* Bots page */
+	.bots {
+		color: #fff;
+	}
+	.bots__name {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 25px;
+		padding-bottom: 16px;
+		border-bottom: 1px solid #fff;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.bots__box {
+		padding: 13px 25px;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid #fff;
+	}
+	.bots__box:nth-child(odd) {
+		color: #00ff38;
 	}
 }

@@ -14,3 +14,12 @@ tMenu.addEventListener('click', function () {
 	navBar.classList.toggle('active')
 	tMenu.classList.toggle('active')
 })
+
+//стилизация активной страницы
+jQuery(() => {
+	$('.header__list [href]').each(function () {
+		if (this.href == window.location.href) {
+			$(this).addClass('header__list-link--active')
+		}
+	})
+})

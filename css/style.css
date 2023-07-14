@@ -145,7 +145,8 @@ body {
 		top: 0;
 		width: 100%;
 		padding-top: 27px;
-		background: linear-gradient(180deg, #000 80%, rgba(0, 0, 0, 0) 100%);
+		background: linear-gradient(180deg, #000 90%, rgba(0, 0, 0, 0) 100%);
+		padding-bottom: 15px;
 	}
 	.header__inner {
 		display: flex;
@@ -176,8 +177,13 @@ body {
 		justify-content: space-between;
 		font-size: 11px;
 	}
+	.header__info--box {
+		display: flex;
+		align-items: center;
+	}
 	.header__info-text {
 		color: #686868;
+		margin-left: 6px;
 	}
 	.header__info-text--green {
 		color: #00ff38;
@@ -542,14 +548,6 @@ body {
 	.form__input::placeholder {
 		font-size: 16px;
 	}
-	.general--main {
-		width: 100%;
-		margin: 0 auto;
-		margin-bottom: 50px;
-		max-width: 500px;
-		height: 300px;
-		display: none;
-	}
 	.general__income {
 		margin-top: 20px;
 		max-width: 600px;
@@ -557,10 +555,14 @@ body {
 	.general__table {
 		display: block;
 		width: 100%;
-		color: #fff;
-		background: linear-gradient(180deg, #1b1a1a 0%, rgba(45, 45, 45, 0) 36.46%);
-		padding-top: 20px;
 		margin-bottom: 50px;
+	}
+	.general__table--inner {
+		background: linear-gradient(180deg, #1b1a1a 0%, rgba(45, 45, 45, 0) 36.46%);
+		padding: 0 20px;
+		border-radius: 20px;
+		padding-top: 20px;
+		color: #fff;
 	}
 	.general__title {
 		font-size: 20px;
@@ -582,18 +584,19 @@ body {
 	.general__table-content {
 		font-size: 20px;
 		font-weight: 600;
+		flex-direction: column;
+		text-align: center;
 	}
 	.general__table-content--info {
 		margin-top: 20px;
 		font-weight: 400;
 	}
-	.general__main--income {
-		padding-top: 50px;
-		font-size: 22px;
-		color: #00ff38;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+	.general__table-subtitle {
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+	.general__table-text {
+		font-size: 16px;
 	}
 }
 @media (min-width: 1240px) {

@@ -17,160 +17,147 @@
 		<title>Home</title>
 	</head>
 	<body>
+		<div id="preloader" class="preloader">
+			<div class="preloader__loader">
+				<div class="loadingio-spinner-rolling-wopxwk46ahe">
+					<div class="ldio-zgxx64th47">
+						<div></div>
+					</div>
+				</div>
+
+				<span class="preloader__percents">
+					<span id="percents">Loading...</span>
+				</span>
+			</div>
+			<!-- /.preloader__loader -->
+		</div>
 		<header class="header">
 			<div class="container">
 				<div class="header__inner">
-					<div class="header__box">
-						<a href="#" class="logo">
-							<img src="img/logo.svg" alt="logo" class="header__img" />
-						</a>
-						<p class="header__text">Joji buyer</p>
-					</div>
-					<ul class="header__list">
-						<a href="index.html" class="header__list-link">
-							<li class="header__list-item">Home</li>
-						</a>
-						<a href="offers.html" class="header__list-link">
-							<li class="header__list-item">Offers</li>
-						</a>
-						<a href="bots.html" class="header__list-link">
-							<li class="header__list-item">Bots</li>
-						</a>
-						<a href="campaigns.html" class="header__list-link">
-							<li class="header__list-item">Campaigns</li>
-						</a>
-					</ul>
-					<div class="header__box">
-						<div class="header__info">
-							<p class="header__info-text">500</p>
-							<div class="header__info--box">
-								<img
-									class="header__info-img"
-									src="img/arrow-up.svg"
-									alt="arrow"
-								/>
-								<p class="header__info-text header__info-text--green">20%</p>
+					<div class="header__top">
+						<div class="header__box">
+							<a href="#" class="logo">
+								<img src="img/logo.svg" alt="logo" class="header__img" />
+							</a>
+							<p class="header__text">Joji buyer</p>
+						</div>
+						<div class="header__box">
+							<div class="header__info">
+								<p class="header__info-text">500</p>
+								<div class="header__info--box">
+									<img
+										class="header__info-img"
+										src="img/arrow-up.svg"
+										alt="arrow"
+									/>
+									<p class="header__info-text header__info-text--green">20%</p>
+								</div>
+							</div>
+							<ul class="header__list">
+								<a href="index.html" class="header__list-link">
+									<li class="header__list-item">Home</li>
+								</a>
+								<a href="offers.html" class="header__list-link">
+									<li class="header__list-item">Offers</li>
+								</a>
+								<a href="bots.html" class="header__list-link">
+									<li class="header__list-item">Bots</li>
+								</a>
+								<a href="campaigns.html" class="header__list-link">
+									<li class="header__list-item">Campaigns</li>
+								</a>
+								<a href="authpage.html" class="header__list-link logout--link">
+									<li class="header__list-item">Logout</li>
+								</a>
+							</ul>
+							<div class="boorger">
+								<a href="#">
+									<span></span>
+									<span></span>
+								</a>
 							</div>
 						</div>
-						<div class="boorger">
-							<a href="#">
-								<span></span>
-								<span></span>
-							</a>
+					</div>
+					<div class="header__bottom">
+						<div class="form">
+							<div class="container">
+								<div class="form__inner">
+									<input
+										class="form__input"
+										placeholder="from"
+										type="text"
+										id="datestart"
+									/>
+									<img
+										class="form__img"
+										src="img/arrow-right.svg"
+										alt="arrow-icon"
+									/>
+									<input
+										class="form__input"
+										placeholder="to"
+										type="text"
+										id="dateend"
+									/>
+									<select
+										class="form__select"
+										name="employees"
+										id="employees-select"
+									>
+										<option value="">Сотрудники</option>
+										<option value="dog">Dog</option>
+									</select>
+									<button class="form__btn">
+										<img
+											class="form__img form__img--2"
+											src="img/arrow-btn.svg"
+											alt="arrow-icon"
+										/>
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="form">
-				<div class="container">
-					<div class="form__inner">
-						<input
-							class="form__input"
-							placeholder="from"
-							type="text"
-							id="datestart"
-						/>
-						<img class="form__img" src="img/arrow-right.svg" alt="arrow-icon" />
-						<input
-							class="form__input"
-							placeholder="to"
-							type="text"
-							id="dateend"
-						/>
-						<select class="form__select" name="employees" id="employees-select">
-							<option value="">Сотрудники</option>
-							<option value="dog">Dog</option>
-						</select>
-						<button class="form__btn">
-							<img
-								class="form__img form__img--2"
-								src="img/arrow-btn.svg"
-								alt="arrow-icon"
-							/>
-						</button>
-					</div>
+					<a href="authpage.html" class="logout">
+						<img src="img/logout.svg" alt="logout" class="logout__img" />
+					</a>
 				</div>
 			</div>
 		</header>
 		<main>
-			<section class="general__table">
-				<div class="container">
-					<div class="general__table--inner">
-						<h1 class="general__title general__table--title">General</h1>
-						<div class="general__table-box">
-							<div class="general__table-content">
-								<h4 class="general__table-subtitle">Lead</h4>
-								<p class="general__table-text">700</p>
-							</div>
-							<div class="general__table-content">
-								<h4 class="general__table-subtitle">Reg</h4>
-								<p class="general__table-text">700</p>
-							</div>
-							<div class="general__table-content">
-								<h4 class="general__table-subtitle">L2R</h4>
-								<p class="general__table-text">700</p>
-							</div>
-							<div class="general__table-content">
-								<h4 class="general__table-subtitle">Cons</h4>
-								<p class="general__table-text">700</p>
-							</div>
-							<div class="general__table-content">
-								<h4 class="general__table-subtitle">Deps</h4>
-								<p class="general__table-text">700</p>
-							</div>
-							<div class="general__table-content">
-								<h4 class="general__table-subtitle">ROI</h4>
-								<p class="general__table-text">700</p>
-							</div>
-							<div class="general__table-content">
-								<h4 class="general__table-subtitle">R2D</h4>
-								<p class="general__table-text">700</p>
-							</div>
-							<div class="general__table-content">
-								<h4 class="general__table-subtitle">L2D</h4>
-								<p class="general__table-text">700</p>
-							</div>
-							<div class="general__table-content">
-								<h4 class="general__table-subtitle">Income</h4>
-								<p class="general__table-text">1095,00 $</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 			<div class="general__blocks">
 				<section class="general general--main">
 					<div class="container">
-						<div class="general__inner">
+						<div class="general__inner--main">
 							<h1 class="general__title">General</h1>
 						</div>
-						<div class="general__box">
+						<div class="general__box--visible">
 							<div class="general__box-content general__lead">
 								Lead <span class="general__lead--span">766</span>
 							</div>
 							<div class="general__box-content general__reg">
 								Reg <span class="general__reg--span">766</span>
 							</div>
-							<div class="general__box-content general__l2r">
-								L2R <span class="general__little--span">766</span>
+							<div class="general__box-content general__deps">
+								Deps <span class="general__deps--span">766</span>
 							</div>
 							<div class="general__box-content general__cons">
 								Cons <span class="general__medium--span">766</span>
 							</div>
-							<div class="general__box-content general__deps">
-								Deps <span class="general__deps--span">766</span>
-							</div>
 							<div class="general__box-content general__roi">
 								ROI <span class="general__medium--span">766</span>
 							</div>
-							<div class="general__box-content general__r2d">
-								R2D <span class="general__little--span">766</span>
+							<div class="general__box-content general__l2r">
+								L2R <span class="general__little--span">766</span>
 							</div>
 							<div class="general__box-content general__l2d">
 								L2D <span class="general__little--span">766</span>
 							</div>
+							<div class="general__box-content general__r2d">
+								R2D <span class="general__little--span">766</span>
+							</div>
+							<div class="general__income">Income <span>1095,00 $</span></div>
 						</div>
-						<div class="general__income">Income <span>1095,00 $</span></div>
 					</div>
 				</section>
 				<section class="general">
@@ -185,26 +172,26 @@
 							<div class="general__box-content general__reg">
 								Reg <span class="general__reg--span">766</span>
 							</div>
-							<div class="general__box-content general__l2r">
-								L2R <span class="general__little--span">766</span>
+							<div class="general__box-content general__deps">
+								Deps <span class="general__deps--span">766</span>
 							</div>
 							<div class="general__box-content general__cons">
 								Cons <span class="general__medium--span">766</span>
 							</div>
-							<div class="general__box-content general__deps">
-								Deps <span class="general__deps--span">766</span>
-							</div>
 							<div class="general__box-content general__roi">
 								ROI <span class="general__medium--span">766</span>
 							</div>
-							<div class="general__box-content general__r2d">
-								R2D <span class="general__little--span">766</span>
+							<div class="general__box-content general__l2r">
+								L2R <span class="general__little--span">766</span>
 							</div>
 							<div class="general__box-content general__l2d">
 								L2D <span class="general__little--span">766</span>
 							</div>
+							<div class="general__box-content general__r2d">
+								R2D <span class="general__little--span">766</span>
+							</div>
+							<div class="general__income">Income <span>1095,00 $</span></div>
 						</div>
-						<div class="general__income">Income <span>1095,00 $</span></div>
 					</div>
 				</section>
 				<section class="general">
@@ -219,33 +206,32 @@
 							<div class="general__box-content general__reg">
 								Reg <span class="general__reg--span">766</span>
 							</div>
-							<div class="general__box-content general__l2r">
-								L2R <span class="general__little--span">766</span>
+							<div class="general__box-content general__deps">
+								Deps <span class="general__deps--span">766</span>
 							</div>
 							<div class="general__box-content general__cons">
 								Cons <span class="general__medium--span">766</span>
 							</div>
-							<div class="general__box-content general__deps">
-								Deps <span class="general__deps--span">766</span>
-							</div>
 							<div class="general__box-content general__roi">
 								ROI <span class="general__medium--span">766</span>
 							</div>
-							<div class="general__box-content general__r2d">
-								R2D <span class="general__little--span">766</span>
+							<div class="general__box-content general__l2r">
+								L2R <span class="general__little--span">766</span>
 							</div>
 							<div class="general__box-content general__l2d">
 								L2D <span class="general__little--span">766</span>
 							</div>
+							<div class="general__box-content general__r2d">
+								R2D <span class="general__little--span">766</span>
+							</div>
+							<div class="general__income">Income <span>1095,00 $</span></div>
 						</div>
-						<div class="general__income">Income <span>1095,00 $</span></div>
 					</div>
 				</section>
 				<section class="general">
 					<div class="container">
 						<div class="general__inner">
 							<h1 class="general__title">General</h1>
-							<img src="img/arrow-input.svg" alt="arrow-icon" />
 						</div>
 						<div class="general__box">
 							<div class="general__box-content general__lead">
@@ -254,26 +240,26 @@
 							<div class="general__box-content general__reg">
 								Reg <span class="general__reg--span">766</span>
 							</div>
-							<div class="general__box-content general__l2r">
-								L2R <span class="general__little--span">766</span>
+							<div class="general__box-content general__deps">
+								Deps <span class="general__deps--span">766</span>
 							</div>
 							<div class="general__box-content general__cons">
 								Cons <span class="general__medium--span">766</span>
 							</div>
-							<div class="general__box-content general__deps">
-								Deps <span class="general__deps--span">766</span>
-							</div>
 							<div class="general__box-content general__roi">
 								ROI <span class="general__medium--span">766</span>
 							</div>
-							<div class="general__box-content general__r2d">
-								R2D <span class="general__little--span">766</span>
+							<div class="general__box-content general__l2r">
+								L2R <span class="general__little--span">766</span>
 							</div>
 							<div class="general__box-content general__l2d">
 								L2D <span class="general__little--span">766</span>
 							</div>
+							<div class="general__box-content general__r2d">
+								R2D <span class="general__little--span">766</span>
+							</div>
+							<div class="general__income">Income <span>1095,00 $</span></div>
 						</div>
-						<div class="general__income">Income <span>1095,00 $</span></div>
 					</div>
 				</section>
 			</div>

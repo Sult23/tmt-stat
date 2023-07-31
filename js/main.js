@@ -1,3 +1,12 @@
+//preloader
+let mask = document.querySelector('.preloader')
+window.addEventListener('load', () => {
+	mask.classList.add('hide')
+	setTimeout(() => {
+		mask.remove()
+	}, 800)
+})
+
 //Datepicker
 $(function () {
 	$('#datestart').datepicker()
@@ -21,5 +30,13 @@ jQuery(() => {
 		if (this.href == window.location.href) {
 			$(this).addClass('header__list-link--active')
 		}
+	})
+})
+
+// modal window
+$(document).ready(function () {
+	$('.general__inner').click(function (event) {
+		$(this).toggleClass('active').next().slideToggle(300)
+		$(this).next().toggleClass('active')
 	})
 })

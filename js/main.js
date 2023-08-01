@@ -36,7 +36,7 @@ jQuery(() => {
 // modal window
 $(document).ready(function () {
 	$('.general__inner').click(function (event) {
-		$(this).toggleClass('active').next().slideToggle(300)
-		$(this).next().toggleClass('active')
+		$(this).toggleClass('active').next().toggleClass('general__box-active')
+		// $(this).next().toggleClass('active')
 	})
 })
